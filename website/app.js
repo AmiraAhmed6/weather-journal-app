@@ -38,7 +38,7 @@ const getTemp = async()=>{
     try{
         const response = await req.json();
         console.log(response);
-        document.getElementById('temp').innerHTML = `Today’s temperature is : ${response.main.temp}.`;
+        document.getElementById('temp').innerHTML = `Today’s temperature is : ${response.main.temp} degree.`;
         
     }catch(error){
         console.log("ERORR",error);
