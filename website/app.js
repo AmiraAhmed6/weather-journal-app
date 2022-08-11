@@ -34,7 +34,7 @@ const allData = async()=>{
 //zip code url 
 const getTemp = async()=>{
     const zip = document.getElementById('zip').value;
-    const req = await fetch(zipApi+`?zip=${zip}&appid=eed70049a39b2d835a12e1a8366525aa`);
+    const req = await fetch(zipApi+`?zip=${zip}&appid=eed70049a39b2d835a12e1a8366525aa&units=metric`);
     try{
         const response = await req.json();
         console.log(response);
